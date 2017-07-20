@@ -52,8 +52,9 @@ export class SpotifyService {
         //   "cache-control": "no-cache"
         // });
         let headers = new Headers();
-         headers.append('Authorization', 'Basic ' + btoa('83d3310e5cdc466891e0adb7e2bf67d1' + ':' + '720cc51a9b7e4623b90d3ff9e0a57203'));
+        //  headers.append('Authorization', 'Basic ' + btoa('83d3310e5cdc466891e0adb7e2bf67d1' + ':' + '720cc51a9b7e4623b90d3ff9e0a57203'));
          headers.append('Content-Type', 'application/x-www-form-urlencoded');
+         headers.append("cache-control", "no-cache");
 
         let body = new URLSearchParams();
         body.append('grant_type','client_credentials');
